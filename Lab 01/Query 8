@@ -1,0 +1,4 @@
+Q: Write a SQL statement to create a table named job_histry including columns employee_id, start_date, end_date, job_id and department_id and make sure that the value 
+against column end_date will be entered at the time of insertion to the format like '--/--/----'.
+
+create table job_histry (employee_id int, start_date date, end_date varchar(10) check (end_date like '__/__/____'), job_id varchar(10), department_id int);
